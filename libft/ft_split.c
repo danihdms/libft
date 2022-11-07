@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dhaydamo <dhaydamo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/07 15:14:42 by dhaydamo          #+#    #+#             */
+/*   Updated: 2022/11/07 15:40:55 by dhaydamo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int	get_nb_words(char const *s, char c)
@@ -8,7 +20,7 @@ int	get_nb_words(char const *s, char c)
 	i = 0;
 	acc = 0;
 	while (s[i])
-		if(s[i++] == c)
+		if (s[i++] == c)
 			acc++;
 	if (s[i - 1] != c)
 		acc++;
@@ -58,8 +70,7 @@ char	**ft_split(char const *s, char c)
 		k = 0;
 		while (s[i] && s[i] != c)
 			res[j][k++] = s[i++];
-		res[j][k] = 0;
-		j++;
+		res[j++][k] = 0;
 	}
 	res[j] = NULL;
 	return (res);
