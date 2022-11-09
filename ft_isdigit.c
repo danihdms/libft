@@ -6,13 +6,13 @@
 /*   By: dhaydamo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:07:56 by dhaydamo          #+#    #+#             */
-/*   Updated: 2022/11/07 15:07:57 by dhaydamo         ###   ########.fr       */
+/*   Updated: 2022/11/09 21:22:27 by dhaydamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(unsigned char c)
+int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }

@@ -19,9 +19,6 @@ all:		${NAME}
 ${NAME}: 	${OBJS}
 		ar rc ${NAME} ${OBJS}
 
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
-	gcc -nostartfiles -shared -o libft.so $(OBJS)
 clean:
 		${RM} ${OBJS} ${B_OBJS}
 

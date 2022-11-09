@@ -6,7 +6,7 @@
 /*   By: dhaydamo <dhaydamo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:21:41 by dhaydamo          #+#    #+#             */
-/*   Updated: 2022/11/07 15:55:44 by dhaydamo         ###   ########.fr       */
+/*   Updated: 2022/11/09 21:23:39 by dhaydamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ typedef struct s_list
 	struct s_list	*next;
 }		t_list;
 
-int		ft_isalpha(unsigned char c);
+int		ft_isalpha(int c);
 
-int		ft_isdigit(unsigned char c);
+int		ft_isdigit(int c);
 
 int		ft_isalnum(unsigned char c);
 
