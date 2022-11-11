@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dhaydamo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dhaydamo <dhaydamo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:06:10 by dhaydamo          #+#    #+#             */
-/*   Updated: 2022/11/11 15:39:28 by dhaydamo         ###   ########.fr       */
+/*   Updated: 2022/11/11 15:53:36 by dhaydamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
 	size_t	j;
-	
+
 	if (!little[0])
 		return ((char *) big);
 	i = 0;
@@ -31,4 +31,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-

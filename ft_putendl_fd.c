@@ -6,7 +6,7 @@
 /*   By: dhaydamo <dhaydamo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:05:49 by dhaydamo          #+#    #+#             */
-/*   Updated: 2022/11/08 20:09:28 by dhaydamo         ###   ########.fr       */
+/*   Updated: 2022/11/11 15:53:16 by dhaydamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putendl_fd(char *s, int fd)
 	int	i;
 
 	if (!s)
-		return;
+		return ;
 	i = 0;
 	while (s[i])
 		ft_putchar_fd(s[i++], fd);

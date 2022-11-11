@@ -6,7 +6,7 @@
 /*   By: dhaydamo <dhaydamo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:14:42 by dhaydamo          #+#    #+#             */
-/*   Updated: 2022/11/08 20:10:03 by dhaydamo         ###   ########.fr       */
+/*   Updated: 2022/11/11 16:14:31 by dhaydamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,17 @@ static char	**free_prev(char **split)
 	return (NULL);
 }
 
+static char	**stralloc(int size)
+{
+	char	**res;
+
+	res = malloc(sizeof(char *) * (size + 1));
+	if (!res)
+		return (NULL);
+	res[size] = NULL;
+	return (res);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	size_t	i;
@@ -50,7 +61,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	res = malloc(sizeof(char *) * (get_nb_words(s, c) + 1));
+	res = stralloc(get_nb_words(s, c));
 	if (!res)
 		return (NULL);
 	i = 0;
@@ -68,6 +79,5 @@ char	**ft_split(char const *s, char c)
 		else
 			s++;
 	}
-	res[i] = NULL;
 	return (res);
 }

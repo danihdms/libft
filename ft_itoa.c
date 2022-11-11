@@ -6,7 +6,7 @@
 /*   By: dhaydamo <dhaydamo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:14:00 by dhaydamo          #+#    #+#             */
-/*   Updated: 2022/11/08 20:33:47 by dhaydamo         ###   ########.fr       */
+/*   Updated: 2022/11/11 15:55:53 by dhaydamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,10 @@ static void	work(long n, char *res, int *pos)
 
 char	*ft_itoa(int n)
 {
-	int		mc_size;
+	int			mc_size;
 	long		long_n;
-	int		*pos;
-	char	*res;
+	int			*pos;
+	char		*res;
 
 	pos = NULL;
 	pos = malloc(sizeof(int));

@@ -19,9 +19,6 @@ all:		${NAME}
 ${NAME}: 	${OBJS}
 		ar rc ${NAME} ${OBJS}
 
-so:
-	gcc ${SRCS} ${BONUS} -shared -o libft.so 
-
 clean:
 		${RM} ${OBJS} ${B_OBJS}
 
