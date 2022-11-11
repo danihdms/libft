@@ -6,7 +6,7 @@
 /*   By: dhaydamo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:06:10 by dhaydamo          #+#    #+#             */
-/*   Updated: 2022/11/07 15:06:12 by dhaydamo         ###   ########.fr       */
+/*   Updated: 2022/11/11 15:39:28 by dhaydamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 	
-	if (len == 0 || !little[0])
+	if (!little[0])
 		return ((char *) big);
 	i = 0;
 	while (big[i] && i < len)
